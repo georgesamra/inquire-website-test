@@ -1,0 +1,84 @@
+@use 'sass:color';
+$inquireGreen: #1EA49F;
+$inquireRed: #8B1546;
+$inquirePurple: #420E75;
+
+:root {
+    color-scheme: light dark;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+}
+
+body {
+    background: light-dark(#ffffff, #000000);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 100vh;
+    margin: 0;
+}
+
+#generator-container {
+    background: light-dark(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)) /*TODO: Change color scheme */;
+    max-width: 400px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    
+}
+
+#title {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+;
+    line-height: 1.8;
+    font-size: x-large;
+}
+
+h2, label, p {
+    color: light-dark(#000, #fff);
+}
+
+p {
+    font-size: large;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+;
+}
+
+
+button {
+    background: light-dark(#1EA49F, #41DCD7);
+    opacity: light-dark(0.6, 1); 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+}
+
+button:hover {
+    background: light-dark(#41DCD7, #1EA49F);
+    opacity: 1; /*TODO: Change color scheme*/
+}
+
+#bible-passage {
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+}
+
+#canvas {
+    z-index: 10;
+    position: absolute;
+    margin-top: -2%;
+}
