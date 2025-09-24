@@ -7,8 +7,12 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+require('dotenv').config();
+
+const apiKey = process.env.API_KEY;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCfGotdK4N-Odi-GBL2xu-6jATGn8xI4E4",
+  apiKey: apiKey,
   authDomain: "scripture-engagement.firebaseapp.com",
   projectId: "scripture-engagement",
   storageBucket: "scripture-engagement.firebasestorage.app",
@@ -21,6 +25,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const express = require("express");
+
+
 
 const cors = require("cors");
 
