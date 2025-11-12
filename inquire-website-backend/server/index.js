@@ -109,7 +109,7 @@ const GetBook = async (scriptureType) => {
   } 
   console.log(bookNum);
   var passage = book + String(chapDisplay);
-  let bibleLink = `https://www.bible.com/bible/111/${youversionBooksLinks[bookNum]}.${chap}."Niv"`
+  let bibleLink = `https://www.bible.com/bible/111/${youversionBooksLinks[bookNum]}.${chap}.NIV`
   return [passage, bibleLink]
 };
 
