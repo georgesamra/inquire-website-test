@@ -1,7 +1,5 @@
 @use 'sass:color';
-$inquireGreen: #1EA49F;
-$inquireRed: #8B1546;
-$inquirePurple: #420E75;
+
 
 :root {
     color-scheme: light dark;

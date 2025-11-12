@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import "./App.css";
+import "./index.css";
 // import InquireButton from './InquireButton';
 // import BibleLinkButton from './BibleLinkButton';
 import React from 'react';
